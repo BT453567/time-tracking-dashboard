@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time tracking dashboard</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png">
+    <script defer src="./js/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="time-tracking-grid-container">
+        <div class="card card1">
+            <div class="card1-flex-container">
+                <div class="card1-top">
+                    <div class="avatar-container">
+                        <img src="./assets/images/image-jeremy.png" alt="">
+                    </div>
+                    <p class="report-for">Report for</p>
+                    <h1 class="report-name">Jeremy Robson</h1>
+                </div>
+                <div class="card1-bottom">
+                    <div>
+                        <button id="daily-button">Daily</button>
+                    </div>
+                    <div>
+                        <button id="weekly-button" >Weekly</button>
+                    </div>
+                    <div>
+                        <button id="monthly-button" >Monthly</button>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div class="card card-small-container card2">
+            <div class="card-small-top">
+                <div class="image-overlay-container">
+                    <img src="./assets/images/icon-work.svg" alt="">
+                </div>
+            </div>
+            <div class="card-small-bottom">
+                <div class="card-small-button-container">
+                    <span class="small-card-title">Work</span>
+                    <button>
+                        <img src="./assets/images/icon-ellipsis.svg" alt="">
+                    </button>
+                </div>
+                <div class="hours-display-flex">
+                    <p class="hours-display"><span id="card2-hours-current" class="number-of-hours"></span>hrs</p>
+                    <p id="card2-hours-previous" class="previous-display"></p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="card card-small-container card3">
+            <div class="card-small-top">
+                <div class="image-overlay-container">
+                    <img src="./assets/images/icon-play.svg" alt="">
+                </div>
+            </div>
+            <div class="card-small-bottom">
+                <div class="card-small-button-container">
+                    <span class="small-card-title">Play</span>
+                    <button>
+                        <img src="./assets/images/icon-ellipsis.svg" alt="">
+                    </button>
+                </div>
+                <div class="hours-display-flex">
+                    <p class="hours-display"><span id="card3-hours-current" class="number-of-hours"></span>hrs</p>
+                    <p id="card3-hours-previous" class="previous-display"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-small-container card4">
+            <div class="card-small-top">
+                <div class="image-overlay-container">
+                    <img src="./assets/images/icon-study.svg" alt="">
+                </div>
+            </div>
+            <div class="card-small-bottom">
+                <div class="card-small-button-container">
+                    <span class="small-card-title">Study</span>
+                    <button>
+                        <img src="./assets/images/icon-ellipsis.svg" alt="">
+                    </button>
+                </div>
+                <div class="hours-display-flex">
+                    <p class="hours-display"><span id="card4-hours-current" class="number-of-hours"></span>hrs</p>
+                    <p id="card4-hours-previous" class="previous-display"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-small-container card5">
+            <div class="card-small-top">
+                <div class="image-overlay-container">
+                    <img src="./assets/images/icon-exercise.svg" alt="">
+                </div>
+            </div>
+            <div class="card-small-bottom">
+                <div class="card-small-button-container">
+                    <span class="small-card-title">Exercise</span>
+                    <button>
+                        <img src="./assets/images/icon-ellipsis.svg" alt="">
+                    </button>
+                </div>
+                <div class="hours-display-flex">
+                    <p class="hours-display"><span id="card5-hours-current" class="number-of-hours"></span>hrs</p>
+                    <p id="card5-hours-previous" class="previous-display"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-small-container card6">
+            <div class="card-small-top">
+                <div class="image-overlay-container">
+                    <img src="./assets/images/icon-social.svg" alt="">
+                </div>
+            </div>
+            <div class="card-small-bottom">
+                <div class="card-small-button-container">
+                    <span class="small-card-title">Social</span>
+                    <button>
+                        <img src="./assets/images/icon-ellipsis.svg" alt="">
+                    </button>
+                </div>
+                <div class="hours-display-flex">
+                    <p class="hours-display"><span id="card6-hours-current" class="number-of-hours"></span>hrs</p>
+                    <p id="card6-hours-previous" class="previous-display"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-small-container card7">
+            <div class="card-small-top">
+                <div class="image-overlay-container">
+                    <img src="./assets/images/icon-self-care.svg" alt="">
+                </div>
+            </div>
+            <div class="card-small-bottom">
+                <div class="card-small-button-container">
+                    <span class="small-card-title">Self Care</span>
+                    <button>
+                        <img src="./assets/images/icon-ellipsis.svg" alt="">
+                    </button>
+                </div>
+                <div class="hours-display-flex">
+                    <p class="hours-display"><span id="card7-hours-current" class="number-of-hours"></span>hrs</p>
+                    <p id="card7-hours-previous" class="previous-display"></p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+    
+</body>
+</html>

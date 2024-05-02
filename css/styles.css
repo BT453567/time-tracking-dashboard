@@ -1,0 +1,258 @@
+:root {
+
+    /* Primary */
+
+    --blue: hsl(246, 80%, 60%);
+
+    --light-red-work: hsl(15, 100%, 70%);
+    --soft-blue-play: hsl(195, 74%, 62%);
+    --light-red-study: hsl(348, 100%, 68%);
+    --lime-green-exercise: hsl(145, 58%, 55%);
+    --violet-social: hsl(264, 64%, 52%);
+    --soft-orange-self-care: hsl(43, 84%, 65%);
+
+    /* Neutral */
+
+    --very-dark-blue: hsl(226, 43%, 10%);
+    --dark-blue: hsl(235, 46%, 20%);
+    --desaturated-blue: hsl(235, 45%, 61%);
+    --pale-blue: hsl(236, 100%, 87%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    color: var(--desaturated-blue);
+    font-size: 1rem;
+    
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.time-tracking-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    gap: 30px;
+    width: 90%;
+    max-width: 1050px;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card1 {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    background-color: var(--dark-blue);
+}
+
+.card1-flex-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card1-top {
+    flex: 7;
+    background-color: var(--blue);
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    
+}
+
+.avatar-container {
+    margin-top: 10px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%; 
+    overflow: hidden; 
+    border: 2px solid white; 
+}
+
+.avatar-container img {
+    height: 100%;
+    width: 100%;
+}
+
+.report-for{
+    margin-top: 30px;
+    color: var(--pale-blue);
+}
+
+.report-name {
+    font-weight: 400;
+    
+}
+
+.report-name::after {
+    content: '\A';
+    white-space: pre; 
+}
+
+
+
+.card1-bottom {
+    flex: 3;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.card1-bottom button.active {
+    color: white;
+}
+
+.card-small-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-small-top {
+    min-height: 40px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.image-overlay-container {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+
+}
+
+.card-small-button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.small-card-title {
+    font-weight: 500;
+}
+
+.card-small-bottom {
+    flex: 1;
+    padding: 20px;
+    background-color: var(--dark-blue);
+    border-radius: 10px 10px 0 0;
+}
+
+.card-small-bottom:hover {
+    background-color: var(--desaturated-blue);
+    cursor: pointer;
+}
+
+.hours-display {
+    margin-top: 30px;
+    font-size: 3rem;
+}
+
+.previous-display {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--pale-blue);
+}
+
+.card2 {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: var(--light-red-work);
+}
+
+.card3 {
+    grid-column: 3;
+    grid-row: 1;
+    background-color: var(--soft-blue-play);
+}
+
+.card4 {
+    grid-column: 4;
+    grid-row: 1;
+    background-color: var(--light-red-study);
+}
+
+.card5 {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: var(--lime-green-exercise);
+}
+
+.card6 {
+    grid-column: 3;
+    grid-row: 2;
+    background-color: var(--violet-social);
+}
+
+.card7 {
+    grid-column: 4;
+    grid-row: 2;
+    background-color: var(--soft-orange-self-care);
+}
+
+@media only screen and (max-width: 767px) {
+
+    body {
+        display: block;
+        padding: 40px 20px 30px 20px;
+    }
+
+    .time-tracking-grid-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card1-bottom {
+        flex-direction: row;
+    }
+
+    .hours-display {
+        margin-top: 0;
+    }
+   
+    .hours-display-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
